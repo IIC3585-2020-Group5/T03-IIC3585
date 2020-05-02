@@ -1,4 +1,6 @@
 .DS_Store
 .vscode
 findSetofNumbers
-fson2
+/fson3.cpp
+/fson2.cpp
+/fson1.cpp

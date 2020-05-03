@@ -18,8 +18,8 @@ const tableUpdater = (n, iter, jsTime, cppTime, maxNum, numArray) => {
     <th scope="row">${$('#result-table tr').length}</th>
     <td>${iter}</td>
     <td>${n}</td>
-    <td>${jsTime}</td>
-    <td>${cppTime}</td>
+    <td>${jsTime.toFixed(2)} ms</td>
+    <td>${cppTime.toFixed(2)} ms</td>
     <td><a href="#" data-toggle="popover" title="Result Array" data-content="${numArray}">${maxNum}</a></td>
     </tr>`);
     $('[data-toggle="popover"]').popover()

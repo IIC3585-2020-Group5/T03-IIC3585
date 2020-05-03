@@ -10,32 +10,62 @@
 
   <body>
     <div class="container">
-      <h1>T3 - WebAssembly</h1>
       <div class="row">
-          <div class="col">
-            <h2>Javascript</h2>
-            <span class="form-inline">
-              <input id="js_n" class="form-control" type="number" min="1" required/>
-              <button id="js_search" class="btn btn-info">Search</button>
-            </span>
-          </div>
-          <div class="col">
-            <h2>C++</h2>
-            <span class="form-inline">
-              <input id="cpp_n" class="form-control" type="number" min="1" required/>
-              <button id="cpp_search" class="btn btn-info">Search</button>
-            </span>
-            <p id="cpp_result"></p>
+        <h1>T3 - WebAssembly</h1>
+      </div>
+      
 
-          </div>
+      <div class="row">
+        <h3>Compare native JS and WASM</h3>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+              <label for="iter-amount">Iterations</label>
+              <input id="iter-amount" class="border-0 custom-range" type="range" min="1" max="6" value="1" />
+              <input id="iter-amount-pow" type="number" value="10" class="form-control"></input>
+            </div>
+            <div class="form-group">
+              <label for="">Array length</label>
+              <input id="array-length" class="form-control" type="number" min="1" value="1" required/>
+            </div>
+            <button type="button" id="exec-comparison" class="btn btn-info mt-2 ">Start</button>
+          </form>
+        </div>
       </div>
 
+
+      <div class="row mt-3">
+
+        
+      </div>
+
+      <div class="row">
+        <h3>Results</h3>
+        <table class="table" id="result-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Iters</th>
+              <th>Array Lenght</th>
+              <th>Native JS Execution Time</th>
+              <th>WASM (C++) Execution Time</th>
+              <th>Max Num. in Set</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
     </div>
 
-    <script async type="module" src="t03.js"></script>
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script async type="module" src="t03.js"></script>
   </body>
 </html>
 

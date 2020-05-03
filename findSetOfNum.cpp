@@ -86,8 +86,8 @@ void solver(int n, int* numberArray, int index, unordered_set<int>* setArray, in
 }
 
 extern "C" {
-    int16_t* searchNumbers(int n) {
-        int MAX_ITER = 1e5;
+    int16_t* searchNumbers(int n, int iter) {
+        int MAX_ITER = iter;
         int numberArray[n];
         unordered_set<int> setArray[n];
         solver(n, numberArray, 0, setArray, 1);

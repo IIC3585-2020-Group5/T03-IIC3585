@@ -64,8 +64,8 @@ const solver = (n, numberArray, index, setArray, currentNumber) => {
 
 
 
-const searchNumbersJs = (n) => {
-    let MAX_ITER = 1e5;
+const searchNumbersJs = (n, iters) => {
+    let MAX_ITER = iters;
     let numberArray, setArray;
     let result = solver(n, new Array(n), 0, new Array(n), 1);
     numberArray = result[0];

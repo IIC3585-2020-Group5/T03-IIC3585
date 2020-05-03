@@ -4,11 +4,13 @@ Diseño Avanzado de Aplicaciones Web
 
 ### Executing program
 
-* Run a simple http server with python
+* Run a simple http server with python2
 
 ```
 python -m SimpleHTTPServer
 ```
+
+* With python3 run using the `start_server` script
 
 ## Authors
 

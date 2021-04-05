@@ -1,5 +1,5 @@
-import { Module } from "/findSetOfNumbers.js"
-import { searchNumbersJs } from "/findSetOfNum.js"
+import { Module } from "findSetOfNumbers.js"
+import { searchNumbersJs } from "findSetOfNum.js"
 
 const cppRunner = (n, iter) => {
     let cppResult;
